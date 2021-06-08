@@ -13,7 +13,20 @@ FoamFile
     object      inputParameters;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-molW		        1000.0;
+Mv                  1000.0;
+pKsp                9.97;
+gamma               32.9e-3;
+Vmol                47.95e-6;
+lnA                 18.2;
+K                   0.001;
 diffInLiquid        1.0;
+Cactivate           2.0;
+diffInLiquid        1.0;
+smoothSurface       false;
+smoothAreaDensity   20.0;
+alphaSolidMin       0.99;
+Cu                  1e18;
+nucleation          false;
+debug               false;
 
 // ************************************************************************* //

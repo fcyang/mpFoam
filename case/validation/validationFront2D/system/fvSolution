@@ -24,11 +24,11 @@ solvers
         relTol          0;
     }
 
-    "alpha.*"
+    "alpha.liquid.*"
     {
         nAlphaCorr      1;
         nAlphaSubCycles 2;
-        cAlphas         ((liquid and solid)  0);
+        cAlpha          1;
 
 
         solver          smoothSolver;
@@ -101,6 +101,7 @@ PIMPLE
     nOuterCorrectors    1;
     nCorrectors         3;
     nNonOrthogonalCorrectors 0;
+    frozenFlow          no;
 }
 
 relaxationFactors
